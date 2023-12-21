@@ -1,0 +1,12 @@
+package first;
+
+public class MethodOverload {
+
+	public static void main(String[] args) {
+		MyClass2 mc2 = new MyClass2();
+		
+		System.out.println(mc2.plus("a", "b", "c"));
+
+	}
+
+}

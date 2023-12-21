@@ -1,0 +1,6 @@
+package javaStudy;
+
+public class Bus extends CarA {
+
+	//아무것도 없지만 부모인 Car클래스로부터 상속받음.
+}

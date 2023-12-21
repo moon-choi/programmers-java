@@ -1,0 +1,10 @@
+package javaStudy;
+
+public class AccesObj {
+	
+	/*접근제한자
+	 - public
+	 - protected
+	 */
+
+}

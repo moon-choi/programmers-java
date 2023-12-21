@@ -1,0 +1,10 @@
+package first;
+
+public class Car3 {
+
+	public static void main(String[] args) {
+		Car c1 = new Car("fire truck")
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package first;
+
+public class Car_Maker { //붕어빵 틀만 있다고 붕어빵이 생기는 것이 아님. 
+
+	public static void main(String[] args) {
+		Car_ c3 = new Car_("police car");
+		Car_ c4 = new Car_("sports car");
+		System.out.println(c3.name);
+	}
+
+}

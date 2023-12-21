@@ -1,0 +1,16 @@
+package javaStudy;
+
+public class BusRunner {
+
+	public static void main(String[] args) {
+		Bus bus = new Bus();
+		bus.drive(); //부모로부터의 상속은 메소.
+		bus.beep();
+		
+		Car car = new Car();
+		car.drive(); //부모 자신의 메소드.
+		
+//		car.beep(); //부모클래스는 자식의 메소드 사용 불가.
+	}
+
+}

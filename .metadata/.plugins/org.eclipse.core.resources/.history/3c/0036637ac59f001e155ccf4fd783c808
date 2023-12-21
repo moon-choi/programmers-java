@@ -1,0 +1,10 @@
+package javaStudy;
+
+public class TruckRunner {
+
+	public static void main(String[] args) {
+		Truck = new Truck();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package first;
+
+public class CarMaker { //붕어빵 틀만 있다고 붕어빵이 생기는 것이 아님. 
+
+	public static void main(String[] args) {
+		//클래스 Car를 이용해서 객체 만들기.
+		//new 연산자는 Car 생성자 이용해서 메모리에 객체(=인스턴스)를 만듦.
+		
+		Car c1 = new Car(); 
+		//Car.java에서 생성자를 추가했더니 기본생성자에서 오류남. => CarMaker2 참고 
+		//더이상 기본생성자를 이용해서 Car객체 생성 불가. 
+		//그래서 스트링 값을 매개변수로 넣어줘야함. 
+		
+		Car c2 = new Car(); 
+		//무한대로 붕어빵 찍어낼 수 있음.
+		//각각의 객체를 '참조'하는 c1, c2 변수가 생김.
+		
+		c1.name = "fire truck";
+		c1.number = 1234;
+		
+		c2.name = "ambulance";
+		c2.number = 5678;
+		System.out.println(c1.name);		
+		
+	}
+
+}

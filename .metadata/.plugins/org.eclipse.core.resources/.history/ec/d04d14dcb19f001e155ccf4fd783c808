@@ -1,0 +1,12 @@
+package javaStudy;
+
+import com.eightcruz.javaStudy.*;
+
+public class MyPackage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyPackage pack = new MyPackage();
+	}
+
+}

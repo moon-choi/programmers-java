@@ -1,0 +1,11 @@
+package javaStudy;
+
+public class AccessObjRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AccessObj obj = new AccessObj();
+		System.out.println(obj.a);
+	}
+
+}

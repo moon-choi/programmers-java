@@ -1,0 +1,21 @@
+package first;
+
+public class Car2 {
+	//필드는 객체의 속성.
+	String name;
+	int number;
+	
+	//Car.java에서 생성자를 추가했더니 기본생성자에서 오류남. => CarMaker2 참고
+	
+	//생성자 만들기 
+	public Car2(String x) {
+		name = x; 
+		//이렇게 하면 Car라는 생성자가 만들어지면서 name이 초기화됌.
+		
+		//사용자가 생성자를 하나라도 추가했더니 기본 생성자는 자동으로 만들어지지 않음.
+		
+		//Car 객체를 만들 때 더이상 기본생성자를 이용해서 만들 수 없어지게 됌.
+		
+		//그래서 스트링 값을 매개변수로 넣어줘야함. 
+	}
+}

@@ -1,0 +1,7 @@
+package first;
+
+public class Car {
+	//필드는 객체의 속성.
+	String name;
+	int number;
+}
