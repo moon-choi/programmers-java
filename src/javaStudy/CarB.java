@@ -7,10 +7,17 @@ public class CarB {
 	
 	//Car.java에서 생성자를 하나라도 추가하면 기본생성자는 자동으로 만들어지지 않음.
 	
+	//기본 생성자 만들기 (Overloading)
+	public CarB() {
+//		this.name = "none";
+//		this.number = 0;
+		this("none", 0); //위와 같은 문법. 코드 중복 방지하는 문법. 
+		//this()는 아래에 있는 자신의 생성자를 호출하는 것.
+	}
+	
 	//생성자 추가하기  
 	public CarB(String name) {//this 는 '내' 필드 네임.
-		this.name = name; 
-		
+		this(name, 0);
 		//이렇게 하면 Car라는 생성자가 만들어지면서 name이 초기화됌.
 		
 		//Car 객체를 만들 때 더이상 기본생성자를 이용해서 만들 수 없어지게 됌.
@@ -18,18 +25,11 @@ public class CarB {
 		//그래서 스트링 값을 매개변수로 넣어줘야함. 
 	}
 	
-	//기본 생성자 만들기 (Overloading)
-	public CarB() {
-//		this.name = "none";
-//		this.number = 0000;
-		this("no name", 0); //위와 같은 문법. 코드 중복 방지하는 문법. 
-		//this()는 아래에 있는 자신의 생성자를 호출하는 것.
-	}
-	
 	public CarB(String name, int number) {
 		this.name = name;
 		this.number = number;
 	}
+	
 }
 
 /* this 용례 

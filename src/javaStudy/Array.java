@@ -12,26 +12,30 @@ public class Array {
 		
 		int[] arr3 = {1, 2, 3, 4}; //위와 같음.
 		
-		int value = arr3[0];
+
+		int value = arr3[1];
 		
-		System.out.println(arr3[0]);
+		System.out.println(Arrays.toString(arr3));
+		arr3[0] = 9;
+		System.out.println(Arrays.toString(arr3));
+		
 		System.out.println(value);
 		
 		//2차원 배열
- 
 		int[][] arr4 = new int[3][4]; //[1차원] [2차원] //4개씩 3배열 
 		arr4[0][1] = 6; //1차원 배열에 2차원 배열의 한 원소 값 할당하기 
 		
-		arr4[1]= new int[] {7,8,9}; //1차원 배열에 2차원 값 할당하기****
+		arr4[1]= new int[] {7,8,9,9}; //1차원 배열에 2차원 값 할당하기****
 		
-//		arr4[0] = [1, 1, 1][][]; //불가 
 		System.out.println(Arrays.toString(arr4[0])); //[0, 6, 0, 0]
-		System.out.println(Arrays.toString(arr4[1])); //[7, 8, 9]
+		System.out.println(Arrays.toString(arr4[1])); //[7, 8, 9, 9]
 
+		arr4[1][3] = 10;
+		System.out.println(Arrays.toString(arr4[1])); //[7, 8, 9, 10]
+		
 		//2차원 배열의 갯수 모를 때  
 		int[][] arr5 = new int [3][]; //n개로 이루어진 3배열
-
-			
+		
 		//서로 길이가 다른 배열 만들어 줄 수도 있음.
 		arr5[0] = new int[1];
 		arr5[1] = new int[2];

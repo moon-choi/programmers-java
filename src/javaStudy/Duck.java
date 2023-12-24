@@ -4,7 +4,7 @@ public class Duck extends Bird {
 
 	@Override
 	public void sing() {
-		System.out.println("quack!");
+		System.out.println("duck can fly");
 	}
 
 }
