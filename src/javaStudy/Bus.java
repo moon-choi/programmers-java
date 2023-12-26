@@ -9,6 +9,6 @@ public class Bus extends Car {
 	
 	public void drive() {
 		super.drive(); //부모의 메소드 호출 
-		System.out.println("let's drive a bus"); //자식의 메소드 호
+		System.out.println("let's drive a bus"); //자식의 메소드 호출 
 	}
 }
