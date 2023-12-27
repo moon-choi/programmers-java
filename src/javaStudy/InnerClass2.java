@@ -3,8 +3,8 @@ package javaStudy;
 public class InnerClass2 {
 	
 	static class Cal{ //2. 정적 내부 클래스 
-		int value = 0; //변
-		public void plus() { //메소
+		int value = 0; //변수 
+		public void plus() { //메소드 
 			value++;
 		}
 	}

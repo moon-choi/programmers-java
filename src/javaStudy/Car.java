@@ -1,9 +1,9 @@
 package javaStudy;
 
 public class Car {
-
+	//생성자는 리턴 없음. (메소드는 있음)
 	public Car() {
-		//기본 생성자 
+		//기본 생성자
 	}
 	public void drive() {
 		System.out.println("1. let's drive a car");

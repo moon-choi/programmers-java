@@ -13,8 +13,8 @@ public class ForEach {
 			System.out.println(x);
 		}
 		
-		//forEach 문 - 타입, 변수이름:꺼낼 값
-		for(int y:arr) { //배열 길이만큼 돌 필요가 없음. 
+		//forEach 문 - 타입, 변수이름: 꺼낼 대상 
+		for(int y: arr) { //배열 길이만큼 돌 필요가 없음. 
 			System.out.println(y);
 		}
 

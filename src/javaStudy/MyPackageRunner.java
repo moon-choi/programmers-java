@@ -8,7 +8,7 @@ public class MyPackageRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MyPackage pack = new MyPackage();
+		MyPackage mp = new MyPackage();
 		//java lang 클래스를 제외한 다른 클래스에 들은 패키지 쓸 경우 꼭 import 해야함. 
 	}
 

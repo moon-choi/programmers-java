@@ -6,7 +6,7 @@ public class JavaStudy {
 		boolean isFun = true;
 		System.out.println(isFun);
 		
-		char c = 'c'; //캐릭터 타입은 single quotes.
+		char c = 'c'; //캐릭터 타입은 single quotes.***
 //		char d = "d"; //double quote는 에러.
 		
 		String str = "str"; //스트링 타입은 double quotes.

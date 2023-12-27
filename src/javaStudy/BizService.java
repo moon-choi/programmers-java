@@ -15,7 +15,7 @@ public class BizService {
 		}
 
 	}
-
+										//사용자 정의 예외를 throws.
 	public void bizMethod(int i) throws BizException{ 
 										//메세지나 에러 보내주는 클래스 
 		System.out.println("business method begins");
