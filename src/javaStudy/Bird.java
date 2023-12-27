@@ -7,6 +7,6 @@ public abstract class Bird { //추상 클래스
 	
 	//추상클래스 내부에 일반 메소드 구현 가능.
 	public void fly() {
-		System.out.println("birds can fly");
+		System.out.println("bird can fly");
 	}
 }

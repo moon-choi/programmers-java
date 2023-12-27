@@ -3,9 +3,10 @@ package javaStudy;
 public class ActionRunner {
 
 	public static void main(String[] args) {
-//		Action a = new MyAction(); //Action은 추상 클래스여서 객체가 생성 안됌. 
-//									//그래서 자식 클래스 생성 
-//		a.exec(); //자식이 가진 메소드 실행 
+//		Action a = new Action(); //Action은 추상 클래스여서 객체가 생성 안됌.
+		Action ma = new MyAction(); //그래서 자식 클래스 생성 				
+		ma.exec(); //자식이 가진 메소드 실행 
+
 		
 		//익명 클래스: 
 		//굳이 상속받는 클래스가 없고 다른 데서 사용 안됄 때.
@@ -16,8 +17,8 @@ public class ActionRunner {
 
 			@Override
 			public void exec() {
-				System.out.println("exec 익명 클래스 ");
-			}	
+				System.out.println("exec 익명 클래스");
+			}	//원래는 이 파트 전체가 MyAction에 정의돼어 있음. 
 		};
 		b.exec();
 	}

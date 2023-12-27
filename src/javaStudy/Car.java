@@ -2,8 +2,11 @@ package javaStudy;
 
 public class Car {
 
+	public Car() {
+		//기본 생성자 
+	}
 	public void drive() {
-		System.out.println("let's drive a car");
+		System.out.println("1. let's drive a car");
 	}
 	
 //	public Car() {
