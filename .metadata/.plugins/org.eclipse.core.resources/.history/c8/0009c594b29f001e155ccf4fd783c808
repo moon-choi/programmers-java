@@ -1,6 +1,0 @@
-package com.eightcruz.javaStudy;
-//작명 공식: domain 순서 뒤집고 + 폴더 이름. 
-
-public class MyPackage {
-
-}

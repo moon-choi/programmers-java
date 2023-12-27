@@ -1,5 +1,0 @@
-package javaStudy;
-
-public class Bird {
-	public abstract void sing();
-}

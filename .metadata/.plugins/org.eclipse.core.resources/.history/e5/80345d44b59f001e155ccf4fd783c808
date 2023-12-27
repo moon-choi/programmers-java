@@ -1,7 +1,0 @@
-package javaStudy;
-
-public class Bus extends CarA {
-	public void drive() {
-		System.out.println("let's drive")
-	}
-}
