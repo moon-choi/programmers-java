@@ -1,6 +1,6 @@
 package javaStudy;
 
-public class StringExam {
+public class StringClass2 {
 	/* 
 	== 연산자는 문자열 변수를 비교할 때 변수의 레퍼런스를 비교합니다. 
 	우리는 변수의 레퍼런스를 비교하고 싶은 게 아니라, 변수가 저장하는 문자열이 같은지 확인하고 싶습니다.
@@ -18,7 +18,7 @@ public class StringExam {
             System.out.println("str1과 str2는 다른 인스턴스를 참조합니다.");
         }
         
-        if( str1.equals(str2) ){
+        if(str1.equals(str2)){
             System.out.println("str1과 str2는 같은 값을 가지고 있습니다.");
         }
         else{

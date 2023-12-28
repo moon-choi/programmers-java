@@ -5,6 +5,8 @@ public class TruckRunner {
 	public static void main(String[] args) {
 		Truck truck = new Truck();
 		
+		truck.drive();
+		
 		/*
 		- truck이 인스턴스화 될 때 (메모리에 올라갈 때) 부모인 car 객체도 메모리에 올라감.
 		- 부모가 먼저 생성됌 => 그래야 자식도 생성됌.
