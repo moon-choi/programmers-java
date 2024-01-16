@@ -11,10 +11,10 @@ public class InnerClass {
 	}
 	
 	public static void main(String[] args) {
-		InnerClass ic = new InnerClass();
-		InnerClass.Cal cal = ic.new Cal();
-		cal.plus();
-		System.out.println(cal.value);
+		InnerClass ic = new InnerClass(); //1. 바깥클래스 인스턴스화 
+		InnerClass.Cal icCal = ic.new Cal(); //2. 내부클래스 인스턴스화 
+		icCal.plus();
+		System.out.println(icCal.value);
 
 	}
 

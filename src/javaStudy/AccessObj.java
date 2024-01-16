@@ -10,13 +10,13 @@ public class AccessObj {
 	 - private: 나 자신만 접근 가능.
 	 */
 	
-	public int pub = 3;
-	protected int prot = 4;
-	int def = 2;
-	private int priv = 1;
+	public int _public = 3;
+	protected int _protected = 4;
+	int _default = 2;
+	private int _private = 1;
 	
 	public static void main(String[] args) {
 		AccessObj obj = new AccessObj();
-		System.out.println(obj.priv); //가능 
+		System.out.println(obj._private); //가능 
 	}
 }

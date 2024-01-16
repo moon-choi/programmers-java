@@ -12,12 +12,12 @@ public class InnerClass3 {
 		//메소드 안에서만 객체 생성 가능 
 		Cal cal = new Cal();
 		cal.plus();
-		System.out.println(cal.value);
+		System.out.println(cal.value); //1
 	}//메소드 끝
 	
 	public static void main(String[] args) {
 		InnerClass3 ic = new InnerClass3();
-		ic.exec();
+		ic.exec(); //1
 
 	}
 

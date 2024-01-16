@@ -1,5 +1,4 @@
 package javaStudy;
-
 public class AccessObjRunner {
 	public static void main(String[] args) {
 		
@@ -12,10 +11,10 @@ public class AccessObjRunner {
 		
 //		AccessObjRunner obj = new AccessObjRunner();
 		
-		System.out.println(obj.pub);
-		System.out.println(obj.prot);
-		System.out.println(obj.def);
-//		System.out.println(obj.priv); //불가능 
+		System.out.println(obj._public);
+		System.out.println(obj._protected);
+		System.out.println(obj._default);
+//		System.out.println(obj._private); //불가능 
 	}
 
 }

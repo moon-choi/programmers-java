@@ -12,9 +12,9 @@ public class InnerClass2 {
 		//스태틱이므로 바로 접근 가능 
 		//InnerClass2 ic = new InnerClass2(); 할 필요없음. 
 
-		InnerClass2.Cal cal = new InnerClass2.Cal(); 
-		cal.plus();
-		System.out.println(cal.value);
+		InnerClass2.Cal icCal = new InnerClass2.Cal(); 
+		icCal.plus();
+		System.out.println(icCal.value);
 
 	}
 

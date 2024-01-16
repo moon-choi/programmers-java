@@ -20,7 +20,7 @@ public class CarB {
 		this(name, 0);
 		/* 
 		이렇게 하면 Car라는 생성자가 만들어지면서 name이 초기화됌.
-		CarB(String name) 생성자를 새로 추가하는 순간, Car 객체를 만들 때 더이상 기본생성자  CarB()를 이용해서 만들 수 없어짐. 
+		CarB(String name) 생성자를 새로 추가하는 순간, Car 객체를 만들 때 더이상 기본생성자 CarB()를 이용해서 만들 수 없어짐. 
 		기본생성자 CarB()는 할당된 값 없이 빈 name, number 필드만 갖고 있음.		
 		그래서 스트링 값을 매개변수로 넣어줘야함. 
 		*/

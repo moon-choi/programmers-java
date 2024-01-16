@@ -42,7 +42,7 @@ public class VariableScope {
 		
 		System.out.println(vs1.globalScope); //20
 		System.out.println(vs2.globalScope); //30
-//		System.out.println(globalScope); //불가능 
+//		System.out.println(globalScope); //불가능. 인스턴스 변수는 인스턴스화해야 쓸 수 있음. 
 		System.out.println(staticVal); //가능 
 		
 		//static한 필드는 인스턴스 생성시에 만들어지지 않고, 값을 저장하는 곳이 하나뿐임. (값을 공유함) 
