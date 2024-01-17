@@ -9,9 +9,9 @@ public class MathClass {
 		System.out.println(value2);
 		
 		Math.abs(-10); //절대값 
-		System.out.println(Math.random()); //random이 리턴은 double. 
+		System.out.println(Math.random()); //0부터 1사이의 랜덤 값. random의 리턴은 double. 
  	
-		System.out.println(Math.sqrt(25)); //제곱
+		System.out.println(Math.sqrt(25)); //제곱근 
 	}
 
 }

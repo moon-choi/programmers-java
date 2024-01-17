@@ -3,6 +3,8 @@ package javaUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+//리스트: 데이터 중복 가능, 순서 있음.
+//저장공간이 필요에 따라 자유로움 (배열은 한번 생성하면 크기 변경 불가)
 public class ListInterface {
 
 	public static void main(String[] args) {

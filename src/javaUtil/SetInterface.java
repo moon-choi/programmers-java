@@ -4,6 +4,7 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.Iterator;
 
+//Set은 중복 없고 순서 없는 인터페이스. 클래스로는 HashSet, TreeSet이 있음.
 public class SetInterface {
 
 	public static void main(String[] args) { 
@@ -16,19 +17,20 @@ public class SetInterface {
 		boolean flag2 = set1.add("kim"); //중복안돼면 true.
 		boolean flag3 = set1.add("kang"); //중복돼면 false.
 		
-		System.out.println(set1.size()); //Set은 중복이 안돼므로 2개임.
-		System.out.println(flag1);
-		System.out.println(flag2);
-		System.out.println(flag3);
+		//size는 부모 인터페이스 Collection 인 가진 메소드
+		System.out.println(set1.size()); //Set은 중복이 허용 돼지 않으므로 2개임.
+		System.out.println(flag1); //true
+		System.out.println(flag2); //true
+		System.out.println(flag3); //false
 		
 		//Iterator는 하나씩 꺼내보기 위한 인터페이스. String값이 있는 것을 꺼내겠다.
 		Iterator<String> iter = set1.iterator(); //iterator 은 메소드. 객체 반환.
 		
 		//인덱스 없으므로 while문 
-		while(iter.hasNext()) { //hasNext는 메소드. 있으면 true, 없으면 false. 
+		while(iter.hasNext()) { //hasNext는 Iterator가 제공하는 메소드. 있으면 true, 없으면 false. 
 								//데이터가 있는 동안만 true를 리턴.
 			String str = iter.next(); //next 메소드는 다음 값을 꺼내줌. 하나를 꺼내면 자동으로 다음 값을 참조. 
-			System.out.println(str);
+			System.out.println(str); //kang, kim
 		}
 		
 	}
