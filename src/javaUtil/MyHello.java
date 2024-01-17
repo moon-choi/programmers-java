@@ -1,8 +1,8 @@
 package javaUtil;
 
 public class MyHello {
-	@Count100
-	public void hello(){
+	@Count10			//<- Annotation 사용.
+	public void helloMethod(){
 		System.out.println("hello");
 	}
 }
