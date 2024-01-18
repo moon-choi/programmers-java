@@ -1,13 +1,14 @@
 package javaUtil;
 
+//공유객체 MusicBox (=그네), 아이들 (=Thread)
 public class MusicBox {
 	
 	public void playMusicA() {
 		for(int i = 0; i < 10; i++) {
-			System.out.println("drop the beat!");
+			System.out.println("happy tunes!");
 			
 			try {
-				Thread.sleep((int)(Math.random()*1000));
+				Thread.sleep((int)(Math.random()*1000)); //1초 이하의 시간동안 10번 반복.
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
