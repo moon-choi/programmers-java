@@ -45,4 +45,5 @@ public class MusicBox { //하나의 객체 MusicBox를 여러개의 MusicPlayer�
 
 /*
 synchronized: 조금이라도 빨리실행돼면 사용권을 얻게됌. (Monitoring lock)
- */
+함수 앞에 synchronized 키워드를 붙이면 쓰레드 한개만 해당 함수를 실행하는 것을 보장한다.
+*/
