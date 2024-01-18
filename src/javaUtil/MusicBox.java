@@ -1,9 +1,9 @@
 package javaUtil;
 
-//공유객체 MusicBox (=그네), 아이들 (=Thread)
-public class MusicBox {
+//공유객체 MusicBox (=그네), Thread는 MusicPlayer(=아이들).
+public class MusicBox { //하나의 객체 MusicBox를 여러개의 MusicPlayer가 사용한다.
 	
-	public void playMusicA() {
+	public synchronized void playMusicA() {
 		for(int i = 0; i < 10; i++) {
 			System.out.println("happy tunes!");
 			
@@ -15,7 +15,7 @@ public class MusicBox {
 		}
 	}
 	
-	public void playMusicB() {
+	public synchronized void playMusicB() {
 		for(int i = 0; i < 10; i++) {
 			System.out.println("sad tunes!");
 			
@@ -29,8 +29,11 @@ public class MusicBox {
 	
 	public void playMusicC() {
 		for(int i = 0; i < 10; i++) {
-			System.out.println("cafe tunes!");
-			
+			synchronized (this) {
+				//메소드 전체에 sync붙이지 말고 특정 블록에만 추가시킴.
+				System.out.println("cafe tunes!");
+			}
+					
 			try {
 				Thread.sleep((int)(Math.random()*1000));
 			} catch (InterruptedException e) {
@@ -39,3 +42,7 @@ public class MusicBox {
 		}
 	}
 }
+
+/*
+synchronized: 조금이라도 빨리실행돼면 사용권을 얻게됌. (Monitoring lock)
+ */

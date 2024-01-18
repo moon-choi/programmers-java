@@ -1,9 +1,9 @@
 package javaUtil;
 
-//사용자(아이들) MusicPlayer (=Thread)
+//Thread MusicPlayer (=아이들/사용자)
 public class MusicPlayer extends Thread {
 	int type;
-	MusicBox musicBox;
+	MusicBox musicBox; //타입이 MusicBox인 musicBox 필드.
 	
 	//생성자 정의.
 	public MusicPlayer(int type, MusicBox musicBox) {
@@ -12,7 +12,7 @@ public class MusicPlayer extends Thread {
 	}
 
 	@Override
-	public void run() {
+	public void run() { //다른 흐름의 main 메소드 (MusicBoxRunner 안에서). 
 		switch (type) {
 		case 1:
 			musicBox.playMusicA();

@@ -1,13 +1,14 @@
 package javaUtil;
 
-//thread 상속 받음.
+//Thread 상속 받음.
 public class MyThread extends Thread {
 	String str;
+	
 	public MyThread(String str) {
 		this.str = str;
 	}
 	
-	//run은 다른 흐름의 main 메소드 
+	//run은 다른 흐름의 main 메소드 (MyThreadRunner에서)
 	@Override
 	public void run() {
 		for(int i = 0; i < 10; i++) {
