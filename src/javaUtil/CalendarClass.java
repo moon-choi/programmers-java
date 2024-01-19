@@ -15,6 +15,8 @@ public class CalendarClass {
 		System.out.println(cal.get(Calendar.HOUR)); //4
 		System.out.println(cal.get(Calendar.HOUR_OF_DAY)); //16
 		System.out.println(cal.get(Calendar.MINUTE));
+		System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+		System.out.println(cal.get(Calendar.WEEK_OF_YEAR));
 		
 		cal.add(Calendar.HOUR, 5); //Calendar의 add 메소드.
 		System.out.println(cal.get(Calendar.HOUR)); //9
