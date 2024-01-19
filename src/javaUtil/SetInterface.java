@@ -4,14 +4,13 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.Iterator;
 
-//Set은 중복 없고 순서 없는 인터페이스. 클래스로는 HashSet, TreeSet이 있음.
+//Set: 중복 불가능, 순서 없음. 구현 클래스로는 HashSet, TreeSet이 있음.
 public class SetInterface {
 
 	public static void main(String[] args) { 
 		//Set은 인터페이스라 인스턴스 됄 수 없으므로 구현클래스인 HashSet 활용.
-		//String값으로 넣겠다.
 		Set<String> set1 = new HashSet<>(); 
-		//타입 		//변수 		//인스턴스 
+	//타입(인터페이스) //변수 	//인스턴스(구현클래스)
 		
 		boolean flag1 = set1.add("kang"); //.add 리턴타입은 boolean.
 		boolean flag2 = set1.add("kim"); //중복안돼면 true.
@@ -37,7 +36,6 @@ public class SetInterface {
 
 }
 
-//set은 순서 없음. 데이터 중복 불허.
 //https://joy-baek.tistory.com/20 
 //Iterator를 쓰게 되면 어떤 컬렉션이라도 동일한 방식으로 접근이 가능하여 
 //그 안에 있는 항목들에 접근할 수 있는 방법을 제공한다.(다형성) 

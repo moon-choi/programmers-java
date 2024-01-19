@@ -3,8 +3,9 @@ package javaUtil;
 public class ThreadB extends Thread {
 	int total;
 	
-	public void run() {
+	public void run() { //this는 자신.
 		synchronized (this) { //모니터링 락을 걸음. 일단 실행되면 우선권을 얻게.
+					//this는 run이 호출됀 객체를 의미함.
 			for(int i = 0; i < 5; i++) {
 				System.out.println(i + "를 더합니다.");
 				total += i;
@@ -16,7 +17,7 @@ public class ThreadB extends Thread {
 				}
 			}
 			notify(); //notify()는 synchronized 블럭 안에 있음.
-			//반복문 끝나면 wait하고 있는 thread를 깨움. 
+			//반복문 끝나면 wait하고 있는 ThreadA의 main thread를 깨움. 
 		}
 	}
 
@@ -40,8 +41,8 @@ public class ThreadB extends Thread {
 	세 메서드가 공통으로 갖는 전제 조건이 보인다. 
 	그것은 호출 스레드가 반드시 대상 객체의 고유 락을 갖고 있어야 한다는 것이다. 
 	다시 말해, 이 메서드들은 synchronized 블록 내에서 실행되어야 한다.***
-	모니터 락이 걸리면 스레드 실행. 락이 해제돼면 스레드는 잠듦.
-	
+	모니터 락이 걸리면(notify) 스레드 실행. 락이 해제돼면(wait) 스레드는 잠듦.
+	락은 Do not disturb! Work in progress로 이해하기.
 	-
 	 
 	wait() 메서드를 호출하면 락을 해제하고, 스레드는 잠이 든다. 

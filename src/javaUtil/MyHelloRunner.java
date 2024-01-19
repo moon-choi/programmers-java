@@ -12,10 +12,10 @@ public class MyHelloRunner {
 			
 			if(myMethod.isAnnotationPresent(Count10.class)) { //특정 어노테이션이 메소드에 적용돼있는가  
 				for(int i = 0; i < 10; i++) {
-					mh.helloMethod(); //어노테이션이 적용됐을 경우 열 번 호출 
+					mh.helloMethod(); //@Count10 어노테이션이 MyHello에 적용됐을 경우 열 번 호출 
 				}
 			} else {
-				mh.helloMethod(); //어노테이션 적용 안됐을 경우 한 번 호출 
+				mh.helloMethod(); //@Count10 어노테이션이 MyHello에 적용 안됐을 경우 한 번 호출 
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

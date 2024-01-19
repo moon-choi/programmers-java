@@ -21,7 +21,7 @@ public class TimeClass {
 		LocalTime lt2 = LocalTime.parse("10:15:30");
 		System.out.println(lt2); //10:15:30
 
-		LocalDate theDate = timePoint.toLocalDate();
+		LocalDate theDate = timePoint.toLocalDate(); //LocalDateTime.now().toLocalDate()
 		System.out.println(theDate); //2024-01-17
 		
 		//Date처럼 Month + 1 안해도 됌. 

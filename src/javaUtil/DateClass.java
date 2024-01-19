@@ -3,11 +3,14 @@ package javaUtil;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-//Date는 localization 안돼있음. (단점보완하는 클래스: Calendar)
-//현재시간 나타내는 법: Calendar.getInstance().getTime(), new Date(), System.currentTimeMillis() 
+/*현재시간 나타내는 법: 
+- Calendar.getInstance().getTime() 
+- new Date()
+- System.currentTimeMillis() 
+*/
 
 public class DateClass {
-
+	//Date는 localization 안돼있음. (단점보완하는 클래스: Calendar)
 	public static void main(String[] args) {
 		Date date = new Date();
 		System.out.println(date.toString()); //Wed Jan 17 09:13:05 KST 2024

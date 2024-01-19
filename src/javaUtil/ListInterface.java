@@ -3,7 +3,7 @@ package javaUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-//리스트: 데이터 중복 가능, 순서 있음.
+//List: 데이터 중복 가능, 순서 있음. 구현클래스로는 ArrayList가 있음.
 //저장공간이 필요에 따라 자유로움 (배열은 한번 생성하면 크기 변경 불가)
 public class ListInterface {
 
@@ -21,14 +21,13 @@ public class ListInterface {
 		System.out.println(list.size()); //.size는 부모 인터페이스 Collection 인 가진 메소드.
 		//list는 값이 중복됄 수 있어서 3임.
 				
-		//인덱스 활용 가능하므로 for
+		//인덱스 활용 가능하므로 for (인덱스 없는 Set 인터페이스는 while문) 
 		for(int i = 0; i < list.size(); i++) {
 			//3. 저장된 값 꺼내오기 
 			String str = list.get(i);
 			System.out.println(str);
 		}
-	}
+
+	} 
 
 }
-
-//list는 순서 있음. 데이터 중복 허용.
